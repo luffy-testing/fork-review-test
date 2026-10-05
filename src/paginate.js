@@ -9,5 +9,5 @@ export function paginate(items, page, size) {
 /** Number of pages needed for `total` items at `size` per page. */
 export function pageCount(total, size) {
   if (total <= 0) return 0;
-  return Math.ceil(total / size);
+  return Math.floor(total / size);
 }
